@@ -1,23 +1,14 @@
 ﻿using System.Text;
 using tyuiu.cources.programming.interfaces.Sprint3;
 
+
 namespace Tyuiu.Adzhievrsh.Sprint3.Task3.V10.Lib
 {
     public class DataService : ISprint3Task3V10
     {
         public string DeleteCharInString(string value)
         {
-            StringBuilder result = new StringBuilder();
-
-            foreach (char item in value)
-            {
-                if (item != 'p')
-                {
-                    result.Append(item);
-                }
-            }
-
-            return result.ToString();
+            return DeleteCharInString(value, 'p');
         }
 
         public string DeleteCharInString(string value, char item)
