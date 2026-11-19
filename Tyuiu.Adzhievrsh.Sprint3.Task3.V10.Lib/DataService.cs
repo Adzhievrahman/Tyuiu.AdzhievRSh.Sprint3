@@ -10,7 +10,7 @@ namespace Tyuiu.AdzhievRSh.Sprint3.Task3.V10.Lib
         {
             return DeleteCharInString(value, 'p');
         }
-
+         
         public string DeleteCharInString(string value, char item)
         {
             StringBuilder result = new StringBuilder();
