@@ -1,35 +1,34 @@
-﻿using System;
-using System.Text;
+﻿using System.Text;
 using tyuiu.cources.programming.interfaces.Sprint3;
 
 namespace Tyuiu.Adzhievrsh.Sprint3.Task3.V10.Lib
 {
     public class DataService : ISprint3Task3V10
     {
-        public string DeleteCharInString(string value) 
+        public string DeleteCharInString(string value)
         {
             StringBuilder result = new StringBuilder();
 
-            foreach (char c in value)
+            foreach (char item in value)
             {
-                if (c != 'p')
+                if (item != 'p')
                 {
-                    result.Append(c);
+                    result.Append(item);
                 }
             }
 
             return result.ToString();
         }
 
-        public string DeleteCharInString(string value, char item) 
+        public string DeleteCharInString(string value, char item)
         {
             StringBuilder result = new StringBuilder();
 
-            foreach (char c in value)
+            foreach (char symbol in value)
             {
-                if (c != item)
+                if (symbol != item)
                 {
-                    result.Append(c);
+                    result.Append(symbol);
                 }
             }
 
