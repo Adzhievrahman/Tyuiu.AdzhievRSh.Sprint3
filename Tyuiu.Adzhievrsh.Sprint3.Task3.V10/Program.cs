@@ -1,7 +1,7 @@
 ﻿using System;
-using Tyuiu.Adzhievrsh.Sprint3.Task3.V10.Lib;
+using Tyuiu.AdzhievRSh.Sprint3.Task3.V10.Lib;
 
-namespace Tyuiu.Adzhievrsh.Sprint3.Task3.V10
+namespace Tyuiu.AdzhievRSh.Sprint3.Task3.V10
 {
     class Program
     {
@@ -9,24 +9,23 @@ namespace Tyuiu.Adzhievrsh.Sprint3.Task3.V10
         {
             Console.Title = "Спринт #3 | Task #3 | Вариант 10";
 
-            Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* Спринт #3                                                               *");
-            Console.WriteLine("* Task #3                                                                 *");
-            Console.WriteLine("* Вариант #10                                                             *");
-            Console.WriteLine("* Выполнил: Аджиев Р.Ш. | ИИП6-26-1                                       *");
-            Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* УСЛОВИЕ: Используя цикл foreach удалить из строки все буквы p.         *");
-            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("************************************************************");
+            Console.WriteLine("* Спринт #3                                                 *");
+            Console.WriteLine("* Тема: Работа со строками                                  *");
+            Console.WriteLine("* Задание #3                                                *");
+            Console.WriteLine("* Вариант 10                                                *");
+            Console.WriteLine("* Выполнил: Аджиев Р.Ш. | ИИП6-26-1                         *");
+            Console.WriteLine("************************************************************");
+            Console.WriteLine();
+
+            DataService ds = new DataService();
 
             string value = "gdfppf vfpppt p";
 
             Console.WriteLine("Исходная строка: " + value);
 
-            DataService service = new DataService();
+            string result = ds.DeleteCharInString(value);
 
-            string result = service.DeleteCharInString(value);
-
-            Console.WriteLine();
             Console.WriteLine("Результат: " + result);
 
             Console.ReadKey();

@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Tyuiu.Adzhievrsh.Sprint3.Task3.V10.Lib;
+using Tyuiu.AdzhievRSh.Sprint3.Task3.V10.Lib;
 
-namespace Tyuiu.Adzhievrsh.Sprint3.Task3.V10.Test
+namespace Tyuiu.AdzhievRSh.Sprint3.Task3.V10.Test
 {
     [TestClass]
     public class DataServiceTest
@@ -9,10 +9,10 @@ namespace Tyuiu.Adzhievrsh.Sprint3.Task3.V10.Test
         [TestMethod]
         public void ValidDeleteCharInString()
         {
-            DataService service = new DataService();
+            DataService ds = new DataService();
 
             string value = "gdfppf vfpppt p";
-            string result = service.DeleteCharInString(value);
+            string result = ds.DeleteCharInString(value);
 
             Assert.AreEqual("gdff vft ", result);
         }
@@ -20,10 +20,10 @@ namespace Tyuiu.Adzhievrsh.Sprint3.Task3.V10.Test
         [TestMethod]
         public void ValidDeleteSelectedChar()
         {
-            DataService service = new DataService();
+            DataService ds = new DataService();
 
             string value = "hello world";
-            string result = service.DeleteCharInString(value, 'l');
+            string result = ds.DeleteCharInString(value, 'l');
 
             Assert.AreEqual("heo word", result);
         }

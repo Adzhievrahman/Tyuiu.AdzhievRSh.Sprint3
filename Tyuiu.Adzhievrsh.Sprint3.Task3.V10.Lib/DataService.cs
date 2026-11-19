@@ -1,6 +1,6 @@
 ﻿using System.Text;
 using tyuiu.cources.programming.interfaces.Sprint3;
-
+using tyuiu.courses.programming.interfaces.Sprint3;
 
 namespace Tyuiu.AdzhievRSh.Sprint3.Task3.V10.Lib
 {
@@ -8,9 +8,19 @@ namespace Tyuiu.AdzhievRSh.Sprint3.Task3.V10.Lib
     {
         public string DeleteCharInString(string value)
         {
-            return DeleteCharInString(value, 'p');
+            StringBuilder result = new StringBuilder();
+
+            foreach (char item in value)
+            {
+                if (item != 'p')
+                {
+                    result.Append(item);
+                }
+            }
+
+            return result.ToString();
         }
-         
+
         public string DeleteCharInString(string value, char item)
         {
             StringBuilder result = new StringBuilder();
