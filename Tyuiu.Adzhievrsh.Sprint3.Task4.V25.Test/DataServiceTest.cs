@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Tyuiu.Adzhievrsh.Sprint3.Task4.V25.Lib;
 
 namespace Tyuiu.Adzhievrsh.Sprint3.Task4.V25.Test
@@ -13,7 +13,7 @@ namespace Tyuiu.Adzhievrsh.Sprint3.Task4.V25.Test
 
             double result = ds.Calculate();
 
-            Assert.IsTrue(double.IsFinite(result));
+            Assert.AreEqual(8.995, result);
         }
     }
 }

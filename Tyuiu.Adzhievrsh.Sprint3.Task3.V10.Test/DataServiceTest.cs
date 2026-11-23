@@ -1,7 +1,7 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Tyuiu.AdzhievRSh.Sprint3.Task3.V10.Lib;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Tyuiu.Adzhievrsh.Sprint3.Task3.V10.Lib;
 
-namespace Tyuiu.AdzhievRSh.Sprint3.Task3.V10.Test
+namespace Tyuiu.Adzhievrsh.Sprint3.Task3.V10.Test
 {
     [TestClass]
     public class DataServiceTest
@@ -11,7 +11,7 @@ namespace Tyuiu.AdzhievRSh.Sprint3.Task3.V10.Test
         {
             DataService ds = new DataService();
 
-            string value = "gdfppf vfpppt p";
+            string value = "gdfppf vfppt p";
             string result = ds.DeleteCharInString(value);
 
             Assert.AreEqual("gdff vft ", result);
