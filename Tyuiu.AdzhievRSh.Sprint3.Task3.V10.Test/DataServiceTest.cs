@@ -18,14 +18,14 @@ namespace Tyuiu.AdzhievRSh.Sprint3.Task3.V10.Test
         }
 
         [TestMethod]
-        public void ValidStringWithoutPIsUnchanged()
+        public void ValidDeleteSelectedChar()
         {
             DataService ds = new DataService();
 
             string value = "hello world";
-            string result = ds.DeleteCharInString(value);
+            string result = ds.DeleteCharInString(value, 'l');
 
-            Assert.AreEqual(value, result);
+            Assert.AreEqual("heo word", result);
         }
     }
 }

@@ -10,13 +10,7 @@ namespace Tyuiu.AdzhievRSh.Sprint3.Task5.V20.Lib
             return GetSumSumSeries(5, 1, 1, 3, 6);
         }
 
-        double ISprint3Task5V20.GetSumSumSeries(
-            int x, int startValue1, int startValue2, int stopValue1, int stopValue2)
-        {
-            return GetSumSumSeries(x, startValue1, startValue2, stopValue1, stopValue2);
-        }
-
-        private static double GetSumSumSeries(
+        public double GetSumSumSeries(
             int x,
             int startValue1,
             int startValue2,

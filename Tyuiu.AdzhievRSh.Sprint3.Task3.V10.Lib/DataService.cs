@@ -20,7 +20,7 @@ namespace Tyuiu.AdzhievRSh.Sprint3.Task3.V10.Lib
             return result.ToString();
         }
 
-        string ISprint3Task3V10.DeleteCharInString(string value, char item)
+        public string DeleteCharInString(string value, char item)
         {
             StringBuilder result = new StringBuilder();
 

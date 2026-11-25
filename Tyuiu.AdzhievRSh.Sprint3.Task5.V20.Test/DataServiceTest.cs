@@ -7,11 +7,11 @@ namespace Tyuiu.AdzhievRSh.Sprint3.Task5.V20.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void Calculate_ReturnsExpectedSum()
+        public void ValidGetSumSumSeries()
         {
             DataService ds = new DataService();
 
-            double res = ds.Calculate();
+            double res = ds.GetSumSumSeries(5, 1, 1, 3, 6);
 
             double wait = 50584.322;
 
